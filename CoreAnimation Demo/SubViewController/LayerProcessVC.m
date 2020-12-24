@@ -73,6 +73,17 @@
     UIImage *maskImage = [UIImage imageNamed:@"2020美团壁纸MacOsAir"];
     maskLayer.contents = (__bridge id)maskImage.CGImage;
     self.imageView.layer.mask = maskLayer;
+    
+    // 使用affine Transform对图层做45度顺时针旋转。
+//    CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI_4);
+//    self.imageView.layer.affineTransform = transform;
+    
+    // 混合变换
+    CGAffineTransform tran = CGAffineTransformIdentity;
+    tran = CGAffineTransformScale(tran, 0.5, 0.5);
+    tran = CGAffineTransformRotate(tran, M_PI / 180.0 * 30.0);
+    tran = CGAffineTransformTranslate(tran, 200, 0);
+    self.imageView.layer.affineTransform = tran;
 }
 
 - (void)changeButtonAlpha{
@@ -93,6 +104,13 @@
     // 手动设置rasterizationScale去匹配屏幕，以防止出现Retina屏幕像素化
     button.layer.rasterizationScale = [UIScreen mainScreen].scale;
     [self.view addSubview:button];
+    
+    
+    // 3D 变换
+    CATransform3D transform = CATransform3DIdentity;
+    transform.m34 = -1.0 / 500.0;
+    transform = CATransform3DRotate(transform, M_PI_4, 0, 1, 0);
+    button.layer.transform = transform;
     
 }
 

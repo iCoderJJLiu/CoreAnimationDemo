@@ -19,6 +19,9 @@
 		2894C00125946CAF00A52CB3 /* CALayerDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C00025946CAF00A52CB3 /* CALayerDrawVC.m */; };
 		2894C00725947BB900A52CB3 /* LayerGeometryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C00625947BB900A52CB3 /* LayerGeometryVC.m */; };
 		2894C00D259482A500A52CB3 /* LayerProcessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C00C259482A500A52CB3 /* LayerProcessVC.m */; };
+		2894C0222594A57900A52CB3 /* CAShapeLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C0212594A57900A52CB3 /* CAShapeLayerVC.m */; };
+		2894C0382594AA5B00A52CB3 /* CATextLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C0372594AA5B00A52CB3 /* CATextLayerVC.m */; };
+		2894C0412594AC7A00A52CB3 /* CATransformLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C0402594AC7A00A52CB3 /* CATransformLayerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		2894C00625947BB900A52CB3 /* LayerGeometryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerGeometryVC.m; sourceTree = "<group>"; };
 		2894C00B259482A500A52CB3 /* LayerProcessVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerProcessVC.h; sourceTree = "<group>"; };
 		2894C00C259482A500A52CB3 /* LayerProcessVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerProcessVC.m; sourceTree = "<group>"; };
+		2894C0202594A57900A52CB3 /* CAShapeLayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerVC.h; sourceTree = "<group>"; };
+		2894C0212594A57900A52CB3 /* CAShapeLayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerVC.m; sourceTree = "<group>"; };
+		2894C0362594AA5B00A52CB3 /* CATextLayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATextLayerVC.h; sourceTree = "<group>"; };
+		2894C0372594AA5B00A52CB3 /* CATextLayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATextLayerVC.m; sourceTree = "<group>"; };
+		2894C03F2594AC7A00A52CB3 /* CATransformLayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransformLayerVC.h; sourceTree = "<group>"; };
+		2894C0402594AC7A00A52CB3 /* CATransformLayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransformLayerVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +128,7 @@
 				2894BFBF2594466600A52CB3 /* SceneDelegate.m */,
 				2894BFC12594466600A52CB3 /* ViewController.h */,
 				2894BFC22594466600A52CB3 /* ViewController.m */,
-				2894C00525947BB900A52CB3 /* LayerGeometryVC.h */,
-				2894C00625947BB900A52CB3 /* LayerGeometryVC.m */,
-				2894BFFF25946CAF00A52CB3 /* CALayerDrawVC.h */,
-				2894C00025946CAF00A52CB3 /* CALayerDrawVC.m */,
-				2894C00B259482A500A52CB3 /* LayerProcessVC.h */,
-				2894C00C259482A500A52CB3 /* LayerProcessVC.m */,
+				2894C0262594A75400A52CB3 /* SubViewController */,
 				2894BFC42594466600A52CB3 /* Main.storyboard */,
 				2894BFC72594466700A52CB3 /* Assets.xcassets */,
 				2894BFC92594466700A52CB3 /* LaunchScreen.storyboard */,
@@ -150,6 +154,25 @@
 				2894BFE42594466700A52CB3 /* Info.plist */,
 			);
 			path = "CoreAnimation DemoUITests";
+			sourceTree = "<group>";
+		};
+		2894C0262594A75400A52CB3 /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2894C00525947BB900A52CB3 /* LayerGeometryVC.h */,
+				2894C00625947BB900A52CB3 /* LayerGeometryVC.m */,
+				2894BFFF25946CAF00A52CB3 /* CALayerDrawVC.h */,
+				2894C00025946CAF00A52CB3 /* CALayerDrawVC.m */,
+				2894C00B259482A500A52CB3 /* LayerProcessVC.h */,
+				2894C00C259482A500A52CB3 /* LayerProcessVC.m */,
+				2894C0202594A57900A52CB3 /* CAShapeLayerVC.h */,
+				2894C0212594A57900A52CB3 /* CAShapeLayerVC.m */,
+				2894C0362594AA5B00A52CB3 /* CATextLayerVC.h */,
+				2894C0372594AA5B00A52CB3 /* CATextLayerVC.m */,
+				2894C03F2594AC7A00A52CB3 /* CATransformLayerVC.h */,
+				2894C0402594AC7A00A52CB3 /* CATransformLayerVC.m */,
+			);
+			path = SubViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +307,12 @@
 				2894C00D259482A500A52CB3 /* LayerProcessVC.m in Sources */,
 				2894BFC32594466600A52CB3 /* ViewController.m in Sources */,
 				2894BFBD2594466600A52CB3 /* AppDelegate.m in Sources */,
+				2894C0412594AC7A00A52CB3 /* CATransformLayerVC.m in Sources */,
 				2894C00725947BB900A52CB3 /* LayerGeometryVC.m in Sources */,
+				2894C0382594AA5B00A52CB3 /* CATextLayerVC.m in Sources */,
 				2894BFCE2594466700A52CB3 /* main.m in Sources */,
 				2894C00125946CAF00A52CB3 /* CALayerDrawVC.m in Sources */,
+				2894C0222594A57900A52CB3 /* CAShapeLayerVC.m in Sources */,
 				2894BFC02594466600A52CB3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
