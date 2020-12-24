@@ -28,9 +28,9 @@
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     
     // cell信息源
-    _cellTextArray = [[NSMutableArray alloc] initWithObjects:@"CALayer相关",@"图层几何相关",@"圆角，边框，阴影，蒙板，组透明等",@"CAShapeLayer",@"CATextLayer",@"CATransformLayer", nil];
+    _cellTextArray = [[NSMutableArray alloc] initWithObjects:@"CALayer相关",@"图层几何相关",@"圆角，边框，阴影，蒙板，组透明等",@"CAShapeLayer",@"CATextLayer",@"CATransformLayer",@"CAGradientLayer",@"CAReplicatorLayer",@"CAEmitterLayer",@"AVPlayerLayer", nil];
     // VC 类名
-    _vcNameArray = [[NSMutableArray alloc] initWithObjects:@"CALayerDrawVC",@"LayerGeometryVC",@"LayerProcessVC",@"CAShapeLayerVC",@"CATextLayerVC",@"CATransformLayerVC", nil];
+    _vcNameArray = [[NSMutableArray alloc] initWithObjects:@"CALayerDrawVC",@"LayerGeometryVC",@"LayerProcessVC",@"CAShapeLayerVC",@"CATextLayerVC",@"CATransformLayerVC",@"CAGradientLayer_VC",@"CAReplicatorLayerVC",@"CAEmitterLayerVC",@"AVPlayerLayerVC", nil];
     
     // 创建主界面
     _homeTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
