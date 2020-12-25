@@ -25,16 +25,22 @@
     textLayer.frame = self.view.bounds;
     [self.view.layer addSublayer:textLayer];
     
+    // 用于呈现接受者文本的颜色
     textLayer.foregroundColor = [UIColor blackColor].CGColor;
+    // 确定单个文本如何在接受者范围内水平对其
     textLayer.alignmentMode = kCAAlignmentJustified;
+    // 确定文本是否自动换行以适合接收者的范围
     textLayer.wrapped = YES;
     
     UIFont *font = [UIFont systemFontOfSize:15];
     
     CFStringRef fontName = (__bridge CFStringRef)font.fontName;
     CGFontRef fontRef = CGFontCreateWithFontName(fontName);
+    // 呈现文字的字体
     textLayer.font = fontRef;
+    // 呈现文字的字体大小
     textLayer.fontSize = font.pointSize;
+    // 将font释放
     CGFontRelease(fontRef);
     
     NSString *text = @"Lorem ipsum dolor sit amet, consectetur adipiscing \ elit. Quisque massa arcu, eleifend vel varius in, facilisis pulvinar \ leo. Nunc quis nunc at mauris pharetra condimentum ut ac neque. Nunc elementum, libero ut porttitor dictum, diam odio congue lacus, vel \ fringilla sapien diam at purus. Etiam suscipit pretium nunc sit amet \ lobortis";

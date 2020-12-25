@@ -26,6 +26,10 @@
 		2894C04D2594B29600A52CB3 /* CAReplicatorLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C04C2594B29600A52CB3 /* CAReplicatorLayerVC.m */; };
 		2894C0532594B65300A52CB3 /* CAEmitterLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C0522594B65300A52CB3 /* CAEmitterLayerVC.m */; };
 		2894C0592594B92800A52CB3 /* AVPlayerLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C0582594B92800A52CB3 /* AVPlayerLayerVC.m */; };
+		2894C062259580D500A52CB3 /* PropretyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C061259580D500A52CB3 /* PropretyAnimationVC.m */; };
+		2894C068259585D900A52CB3 /* UIBezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C067259585D900A52CB3 /* UIBezierPathVC.m */; };
+		2894C06E2595969200A52CB3 /* AnimationGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C06D2595969200A52CB3 /* AnimationGroupVC.m */; };
+		2894C0802595D45500A52CB3 /* DrawImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894C07F2595D45500A52CB3 /* DrawImageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,14 @@
 		2894C0522594B65300A52CB3 /* CAEmitterLayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerVC.m; sourceTree = "<group>"; };
 		2894C0572594B92800A52CB3 /* AVPlayerLayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerLayerVC.h; sourceTree = "<group>"; };
 		2894C0582594B92800A52CB3 /* AVPlayerLayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerLayerVC.m; sourceTree = "<group>"; };
+		2894C060259580D500A52CB3 /* PropretyAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropretyAnimationVC.h; sourceTree = "<group>"; };
+		2894C061259580D500A52CB3 /* PropretyAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropretyAnimationVC.m; sourceTree = "<group>"; };
+		2894C066259585D900A52CB3 /* UIBezierPathVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBezierPathVC.h; sourceTree = "<group>"; };
+		2894C067259585D900A52CB3 /* UIBezierPathVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBezierPathVC.m; sourceTree = "<group>"; };
+		2894C06C2595969200A52CB3 /* AnimationGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationGroupVC.h; sourceTree = "<group>"; };
+		2894C06D2595969200A52CB3 /* AnimationGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationGroupVC.m; sourceTree = "<group>"; };
+		2894C07E2595D45500A52CB3 /* DrawImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawImageVC.h; sourceTree = "<group>"; };
+		2894C07F2595D45500A52CB3 /* DrawImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawImageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +203,14 @@
 				2894C0522594B65300A52CB3 /* CAEmitterLayerVC.m */,
 				2894C0572594B92800A52CB3 /* AVPlayerLayerVC.h */,
 				2894C0582594B92800A52CB3 /* AVPlayerLayerVC.m */,
+				2894C060259580D500A52CB3 /* PropretyAnimationVC.h */,
+				2894C061259580D500A52CB3 /* PropretyAnimationVC.m */,
+				2894C066259585D900A52CB3 /* UIBezierPathVC.h */,
+				2894C067259585D900A52CB3 /* UIBezierPathVC.m */,
+				2894C07E2595D45500A52CB3 /* DrawImageVC.h */,
+				2894C07F2595D45500A52CB3 /* DrawImageVC.m */,
+				2894C06C2595969200A52CB3 /* AnimationGroupVC.h */,
+				2894C06D2595969200A52CB3 /* AnimationGroupVC.m */,
 			);
 			path = SubViewController;
 			sourceTree = "<group>";
@@ -324,15 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2894C068259585D900A52CB3 /* UIBezierPathVC.m in Sources */,
 				2894C00D259482A500A52CB3 /* LayerProcessVC.m in Sources */,
 				2894C0532594B65300A52CB3 /* CAEmitterLayerVC.m in Sources */,
 				2894BFC32594466600A52CB3 /* ViewController.m in Sources */,
+				2894C062259580D500A52CB3 /* PropretyAnimationVC.m in Sources */,
 				2894BFBD2594466600A52CB3 /* AppDelegate.m in Sources */,
+				2894C06E2595969200A52CB3 /* AnimationGroupVC.m in Sources */,
 				2894C04D2594B29600A52CB3 /* CAReplicatorLayerVC.m in Sources */,
 				2894C0412594AC7A00A52CB3 /* CATransformLayerVC.m in Sources */,
 				2894C0592594B92800A52CB3 /* AVPlayerLayerVC.m in Sources */,
 				2894C00725947BB900A52CB3 /* LayerGeometryVC.m in Sources */,
 				2894C0382594AA5B00A52CB3 /* CATextLayerVC.m in Sources */,
+				2894C0802595D45500A52CB3 /* DrawImageVC.m in Sources */,
 				2894BFCE2594466700A52CB3 /* main.m in Sources */,
 				2894C00125946CAF00A52CB3 /* CALayerDrawVC.m in Sources */,
 				2894C0472594AFE000A52CB3 /* CAGradientLayer VC.m in Sources */,

@@ -93,6 +93,7 @@
 
 - (void)addSrpiteImage:(UIImage *)image WithContentRect:(CGRect)rect toLayer:(CALayer *)layer{
     layer.contents = (__bridge id)image.CGImage;
+    // 图片自适应
     layer.contentsGravity = kCAGravityResizeAspect;
     layer.contentsRect = rect;
 }

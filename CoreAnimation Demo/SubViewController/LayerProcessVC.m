@@ -55,9 +55,13 @@
 }
 
 // 阴影
+// 如果view没有设置背景色阴影也是不会显示
 - (void)setShadow{
+    // 设置阴影的不透明度，范围在0 ~ 1
     self.redView.layer.shadowOpacity = 1.0f;
+    // 设置阴影偏移量，默认是(0, -3)
     self.redView.layer.shadowOffset = CGSizeMake(1.0f, 5.0f);
+    // 设置阴影圆角
     self.redView.layer.shadowRadius = 5.0f;
 }
 
@@ -79,9 +83,13 @@
 //    self.imageView.layer.affineTransform = transform;
     
     // 混合变换
+    // CGAffineTransform 是一个映射转换 3 * 3的矩阵，用来绘制2D图像
     CGAffineTransform tran = CGAffineTransformIdentity;
+    // 缩放
     tran = CGAffineTransformScale(tran, 0.5, 0.5);
+    // 旋转
     tran = CGAffineTransformRotate(tran, M_PI / 180.0 * 30.0);
+    // 平移转换
     tran = CGAffineTransformTranslate(tran, 200, 0);
     self.imageView.layer.affineTransform = tran;
 }
@@ -108,6 +116,7 @@
     
     // 3D 变换
     CATransform3D transform = CATransform3DIdentity;
+    // 修改矩阵元素值
     transform.m34 = -1.0 / 500.0;
     transform = CATransform3DRotate(transform, M_PI_4, 0, 1, 0);
     button.layer.transform = transform;
